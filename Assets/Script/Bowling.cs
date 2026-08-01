@@ -33,16 +33,16 @@ public class Bowling : MonoBehaviour
 
     }
 
-    private void ShootBall()
+    public void ShootBall()
     {
         rb.AddForce(Vector3.forward * forcePower, ForceMode.Impulse);
     }
 
-    private void MoveRight()
+    public void MoveRight()
     {
         transform.position += new Vector3(1f, 0f, 0f) * Time.deltaTime;
     }
-    private void MoveLeft()
+    public void MoveLeft()
     {
         transform.position += new Vector3(-1f, 0f, 0f) * Time.deltaTime;
     }
